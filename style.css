@@ -1,5 +1,6 @@
  /* Base HTML Styles */
- @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
  :root {
    --brand: #353148;
    --action: #B98E68;
@@ -8,6 +9,36 @@
    --base-dark: #493A35;
    --black: #111111;
  }
+
+
+ /* About Me Section */
+ .about-section {
+  padding: var(--space-8x) var(--container-padding);
+  background-color: var(--light)
+ }
+
+ .about-left {
+  flex: 1;
+ min-width: 300px;
+ }
+
+ .profile-image img{
+ max-width:300px;
+ margin: 0 auto;
+ display: flex;
+ gap: var(--space-4x);
+align-items: flex-start;
+flex-wrap: wrap;
+ }
+
+ .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 
  /* CSS Reset */
 
@@ -19,6 +50,22 @@
    color: var(--black);
    scroll-behavior: smooth;
  }
+
+ /* Example using your base stylesheet - Added in hindsight */ 
+.profile-image {
+  max-width: 50%;   /* ensures it doesn't overflow its container */
+  height: auto;      /* maintains aspect ratio */
+  display: block;
+  margin: 0 auto;    /* centers the image */
+}
+@media (max-width: 768px) {
+  .profile-image {
+    width: 40%;      /* slightly smaller on mobile */
+  }
+}
+
+
+
 
  *,
  *:before,
