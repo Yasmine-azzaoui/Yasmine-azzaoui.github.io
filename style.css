@@ -236,7 +236,7 @@ header button {
     display: flex;
   }
 }
-
+/* MAKE BUTTON RESPONSIVE */
  }
   article {
    padding: 32px 16px;
@@ -327,12 +327,24 @@ article .article-heading {
    text-align: center;
    display: flex;
    justify-content: space-around;
+   background-color: var(--action);
  }
  
  .socials-icon {
    width: 40px;
    height: 40px;
  }
+
+ footer .socials-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;     /* smooth animation like the upper button */
+}
+
+footer .socials-icon:hover {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); /* same shadow as upper button */
+  transform: translateY(-4px);                 /* “pop out” */
+}
  @media (min-width: 768px) {
    footer {
        justify-content: center;
