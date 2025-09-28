@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>My Profile</title>
-    <header>
+</head>
 
+
+<body>
+    <header>
         <div class="mobile-header">
             <button type="button" class="hamburger-button">
-                <img class="hamburger-icon" src="./img/hamburger.svg"
+                <img class="hamburger-icon" src="./hamburger.svg"
                     alt="Three horizontal lines, positioned one above the other." />
             </button>
         </div>
@@ -42,32 +45,6 @@
             </ul>
         </nav>
     </header>
-    <style>
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes blink {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: black;
-            }
-        }
-    </style>
-</head>
-
-<body>
     <!-- About Me - Homepage -->
     <section id="about" class="about-section">
         <div class="about-container">
@@ -81,7 +58,7 @@
             <div class="profile-text">
                 <h1 class="profile-header">Hi, I am Yasmine</h1>
                 <br>
-                <p>
+                <p class="profile-description">
                     a Data Analyst that currently works in Martech and is passionate about data and technology.<br>
                     I'm currently expanding my coding skills as a student at SheCodes.<br>
                     Throughout the next 6 months I'll be deep diving into HTML, CSS, JavaScript, React, Django, and
@@ -94,145 +71,44 @@
                 <a href="/cv.html" class="btn-primary">My Journey So Far</a>
             </div>
         </div>
-        <section class="articles-container">
-            <article>
-                <h3>Project 1</h3>
-                <br>
-                <img src="./coming-soon.png" alt="Image saying coming soon">
-            </article>
-            <article>
-                <h3>Project 2</h3>
-                <br>
-                <img src="./coming-soon.png" alt="Image saying coming soon">
-            </article>
-            <article>
-                <h3>Project 3</h3>
-                <br>
-                <img src="./coming-soon.png" alt="Image saying coming soon">
-            </article>
-        </section>
-        <footer>
+    </section>
 
-            <h2>Connect with Me</h2>
-            <a href="https://github.com/Yasmine-azzaoui" title="@shecodesaus on Instagram">
-                <img class="socials-icon" src="./github.png"
-                    alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
-            </a>
-            <a href="https://www.linkedin.com/in/yasmine-azzaoui-8b0a8116b/">
-                <img class="socials-icon" src="./linkedin.png" alt="The LinkedIn logoa: A black in" />
-            </a>
-            <a href="mailto:yasmineazzaoui2@gmail.com">
-                <img class="socials-icon" src="./envelope.png" alt="An envelop - linking to my email" />
-            </a>
-        </footer>
+    <!-- Projects -->
+    <section class="articles-container">
+        <article>
+            <h3>Project 1</h3>
+            <br>
+            <img src="./coming-soon.png" alt="Image saying coming soon">
+        </article>
+        <article>
+            <h3>Project 2</h3>
+            <br>
+            <img src="./coming-soon.png" alt="Image saying coming soon">
+        </article>
+        <article>
+            <h3>Project 3</h3>
+            <br>
+            <img src="./coming-soon.png" alt="Image saying coming soon">
+        </article>
+    </section>
+
+    <!-- CONNTECT WITH ME -->
+    <section class="connect">
+        <h2>Connect with Me</h2>
+    </section>
+    <footer>
+
+        <a href="https://github.com/Yasmine-azzaoui" title="@shecodesaus on Instagram">
+            <img class="socials-icon" src="./github.png"
+                alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
+        </a>
+        <a href="https://www.linkedin.com/in/yasmine-azzaoui-8b0a8116b/">
+            <img class="socials-icon" src="./linkedin.png" alt="The LinkedIn logoa: A black in" />
+        </a>
+        <a href="mailto:yasmineazzaoui2@gmail.com">
+            <img class="socials-icon" src="./envelope.png" alt="An envelop - linking to my email" />
+        </a>
+    </footer>
 </body>
 
 </html>
-
-
-
-<!-- old code  -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>She Codes</title>
-    <link rel="icon" type="image/png" href="./img/logo.png">
-    <link rel="stylesheet" href="./style.css"></head>
-
-</head>
-<body>
-   <header>
-
-                 <div class="mobile-header">
-           <img src="./img/logo.png" alt="The She Codes Logo" class="logo">
-           <button type="button" class="hamburger-button">
-               <img class="hamburger-icon" src="./img/hamburger.svg"
-                   alt="Three horizontal lines, positioned one above the other." />
-           </button>
-       </div>
-       <nav class="desktop-nav" aria-label="Primary">
-           <ul>
-               <li>
-                   <a href="">Coders</a>
-               </li>
-               <li>
-                   <a href="">Mentors</a>
-               </li>
-               <li>
-                   <a href="">Partners</a>
-               </li>
-               <li>
-                   <a href="">Blog</a>
-               </li>
-               <li>
-                   <a href="">Contact</a>
-               </li>
-           </ul>
-       </nav>
-       <nav class="mobile-nav display-none" aria-label="Primary">
-           <ul>
-               <li>
-                   <a href="">Coders</a>
-               </li>
-               <li>
-                   <a href="">Mentors</a>
-               </li>
-               <li>
-                   <a href="">Partners</a>
-               </li>
-               <li>
-                   <a href="">Blog</a>
-               </li>
-               <li>
-                   <a href="">Contact</a>
-               </li>
-           </ul>
-       </nav>
-   </header>
-  <section class="hero">
-      <h1>A movement devoted to helping women learn tech skills.</h1>
-      <a href="#" class="btn-primary">Start Learning</a>
-  </section>
-   <section class="articles-container">
-     <article>
-         <img class="icon" src="./img/tools.svg"
-             alt="A wrench and a screwdriver, lying crossed over one another diagonally" />
-         <h2>1 Day Workshops</h2>
-         <p>
-             Whether you're interested in coding as a career, or just looking to see what it's all about, our free
-             one day workshops are the perfect starting point.
-         </p>
-         <a href="#" class="btn-primary">Apply</a>
-     </article>
-     <article>
-         <img class="icon" src="./img/lightning.svg"
-             alt="A jagged lightning bolt, thick at the top and sharp at the bottom" />
-         <h2>1 Week Flash</h2>
-         <p>
-             Discover the fundamentals of tech in just one week. Flash is a one week taster program, aimed at
-             teaching you the basics of the key emerging fields in tech.
-         </p>
-         <a href="#" class="btn-primary">Apply</a>
-     </article>
-     <article>
-         <img class="icon" src="./img/plus.svg"
-             alt="A plus sign formed by a horizontal line intersecting a vertical line" />
-         <h2>6 Month Plus</h2>
-         <p>
-             She Codes Plus is a program providing an alternate pathway within tech. The Plus program is perfect for
-             you if your desire is to enter a tech career.
-         </p>
-         <a href="#" class="btn-primary">Apply</a>
-     </article>
- </section>
-   <section class="contact-form">
-      <h2>Get in touch</h2>
-
-
-
-<!-- -- https://github.com/Yasmine-azzaoui/my_first_website_yas.git -->
-<!-- <link rel="icon" type="image/png" href="file:///Users/yasmineazzaoui/Downloads/logo.png"></head>
-command d to highlight dupes -->
-<!-- What are attributes in HTML? -->

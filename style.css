@@ -12,44 +12,140 @@
 
 
 /* About Me Section */
-.about-section {
-  padding: var(--space-8x) var(--container-padding);
-  background-color: var(--light)
-}
 
-.about-left {
-  flex: 1;
-  min-width: 300px;
+.profile-image {
+  max-width: 50%;
+  /* TO NOT OVERFLOW  */
+  height: auto;
+  /*aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* centers the image */
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .profile-image img {
-  max-width: 300px;
-  margin: 0 auto;
-  display: flex;
   border-radius: 4px;
-  gap: var(--space-4x);
-  align-items: flex-start;
-  flex-wrap: wrap;
+
 }
 
-.nothing-text {
-  /* max-width: 80%;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-text-align: center;
-font-size: 2rem;
-padding: 0 1rem;   
-box-sizing: border-box;
-background-color: var(--action) */
-  padding: 16px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background-color: var(--action);
+.profile-header {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* caret */
+  width: 0;
+  animation:
+    typing 4s steps(30, end) forwards,
+    blink 0.7s step-end infinite;
 }
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Caret blink animation */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+/* Mobile first: stack everything */
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column; /* stack vertically */
+    text-align: center;     /* center text and image */
+  }
+
+  .about-left {
+    order: 2;               /* move image below header */
+    max-width: 250px;       /* smaller image */
+    margin: 1rem auto;      /* center it horizontally */
+  }
+
+  .profile-header {
+    order: 1;               /* header first */
+  }
+  .profile-description {
+    order: 3;               /* paragraph last */
+  }
+
+  .profile-header {
+    font-size: 1.8rem;      /* adjust for mobile if needed */
+    margin-bottom: 1rem;
+  }
+
+
+  .profile-text  {
+    order: 3;               /* paragraph last */
+    margin-top: 1rem;
+  }
+}
+
+/* Desktop (default or min-width: 768px) */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;    /* side by side */
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-left {
+    order: 1;               /* image on left */
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .profile-text {
+    order: 2;               /* text on right */
+  }
+}
+
+/* PROJECT */
+
+.nothing-text {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-size: clamp(1.5rem, 5vw, 3rem); /* responsive font size */
+  background-color: var(--action);     
+  color: white;                         
+}
+
+/* Typing header */
+.nothing-text h1 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white; /* caret color matches text */
+  animation:
+    typing 4s steps(30, end) forwards,
+    blink 0.7s step-end infinite;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Paragraph */
+.nothing-text p {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+
+/* RESUME */
 
 .cv-download {
   padding: 16px;
@@ -58,13 +154,7 @@ background-color: var(--action) */
   display: flex;
 }
 
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
+
 
 
 /* CSS Reset */
@@ -78,12 +168,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Example using your base stylesheet - Added in hindsight */
+
 .profile-image {
   max-width: 50%;
-  /* ensures it doesn't overflow its container */
+  /* TO NOT OVERFLOW  */
   height: auto;
-  /* maintains aspect ratio */
+  /*aspect ratio */
   display: block;
   margin: 0 auto;
   /* centers the image */
@@ -172,9 +262,9 @@ select {
 /* header */
 header .mobile-header {
   padding: 16px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 header button {
@@ -241,7 +331,7 @@ header button {
 }
 
 /* .hero */
-.hero {
+/* .hero {
   background-color: var(--brand);
   padding: 56px 16px;
   border-radius: 10px;
@@ -267,7 +357,7 @@ header button {
     font-size: 3.5rem;
     max-width: 70%;
   }
-}
+} */
 
 /* .mini-container  */
 
@@ -349,56 +439,6 @@ article p {
   margin-bottom: 16px;
 }
 
-/* .contact-form */
-.contact-form {
-  padding: 48px 16px;
-  border-radius: 10px;
-  margin: 5px 10px;
-}
-
-.contact-form input,
-.contact-form select {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-}
-
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  padding: 8px;
-}
-
-.contact-form label {
-  display: block;
-  width: 100%;
-}
-
-.contact-form h2 {
-  color: var(--base-dark);
-  margin-bottom: 16px;
-}
-
-.contact-form input[type="submit"] {
-  background-color: var(--action);
-  border: 0;
-  margin-top: 8px;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .contact-form h2 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-
-  .contact-form form {
-    max-width: 60%;
-    margin: 40px auto;
-  }
-}
-
 /* CV ARTICLES */
 .cv-article:nth-child(1) {
   background-color: var(--base-light);
@@ -414,6 +454,11 @@ article p {
 
 
 /* footer */
+
+section.connect h2 {
+  text-align: center;
+}
+
 footer {
   padding: 16px;
   text-align: center;
@@ -452,14 +497,3 @@ footer .socials-icon:hover {
   }
 }
 
-.profile-header {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid black;
-  /* caret */
-  width: 0;
-  animation:
-    typing 4s steps(30, end) forwards,
-    blink .7s step-end infinite;
-}
