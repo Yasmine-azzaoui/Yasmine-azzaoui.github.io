@@ -1,116 +1,138 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
- <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="style.css" rel="stylesheet">
-  <title>My Profile</title>
-   <header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>My Profile</title>
+    <header>
 
-                 <div class="mobile-header">
-           <button type="button" class="hamburger-button">
-               <img class="hamburger-icon" src="./img/hamburger.svg"
-                   alt="Three horizontal lines, positioned one above the other." />
-           </button>
-       </div>
-       <nav class="desktop-nav" aria-label="Primary">
-           <ul>
-               <li>
-                   <a href="/Projects.html">Projects</a>
-               </li>
-               <li>
-                   <a href="/cv.html">CV</a>
-               </li>
-               <li>
-                   <a href="">Contact</a>
-               </li>
-           </ul>
-       </nav>
-       <nav class="mobile-nav display-none" aria-label="Primary">
-           <ul>
-               <li>
-                   <a href="/Projects.html">Projects</a>
-               </li>
-               <li>
-                   <a href="/cv.html">CV</a>
-               </li>
-               <li>
-                   <a href="">Contact</a>
-               </li>
-           </ul>
-       </nav>
-   </header>
-  <style>
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-    @keyframes blink {
-      from, to { border-color: transparent; }
-      50% { border-color: black; }
-    }
-  </style>
+        <div class="mobile-header">
+            <button type="button" class="hamburger-button">
+                <img class="hamburger-icon" src="./img/hamburger.svg"
+                    alt="Three horizontal lines, positioned one above the other." />
+            </button>
+        </div>
+        <nav class="desktop-nav" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="/Projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/cv.html">Resume</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="/Projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/cv.html">CV</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: black;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <!-- About Me - Homepage -->
-  <section id="about" class="about-section">
-<div class="about-container">
-  <!-- Left side - Image -->
-   <div class="about-left">
-  <div class="profile-image">
-    <img src="./Yasmine.jpg" alt="A picture of Yasmine.">
-  </div>
-    </div>
-<!-- Rigth side - Text -->
-  <div class="profile-text">
-    <h1 style="
-  display:inline-block;
-  white-space:nowrap;
-  overflow:hidden;
-  border-right:3px solid black;      /* caret */
-  width:0;
-  animation:
-    typing 4s steps(30,end) forwards,
-    blink .7s step-end infinite;">Hi, I am Yasmine</h1>
-    <br>
-    <p>
-      a Data Analyst that currently works in Martech and is passionate about data and technology.<br>
-      I'm currently expanding my coding skills as a student at SheCodes.<br>
-      Throughout the next 6 months I'll be deep diving into HTML, CSS, JavaScript, React, Django, and Python.<br>
-      I'm aiming to develop a holistic understanding of all things tech, <br>
-      which will provide me with a strong foundation to dive into AI and Machine Learning.<br>
-      Are you interested to learn more about me? Let's connect!
-    </p>
-    <br>
-    <a href="/cv.html" class="btn-primary">My Journey So Far</a>
-  </div>
-</div>
-  <footer>
+    <!-- About Me - Homepage -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- Left side - Image -->
+            <div class="about-left">
+                <div class="profile-image">
+                    <img src="./Yasmine.jpg" alt="A picture of Yasmine.">
+                </div>
+            </div>
+            <!-- Rigth side - Text -->
+            <div class="profile-text">
+                <h1 class="profile-header">Hi, I am Yasmine</h1>
+                <br>
+                <p>
+                    a Data Analyst that currently works in Martech and is passionate about data and technology.<br>
+                    I'm currently expanding my coding skills as a student at SheCodes.<br>
+                    Throughout the next 6 months I'll be deep diving into HTML, CSS, JavaScript, React, Django, and
+                    Python.<br>
+                    I'm aiming to develop a holistic understanding of all things tech, <br>
+                    which will provide me with a strong foundation to dive into AI and Machine Learning.<br>
+                    Are you interested to learn more about me? Let's connect!
+                </p>
+                <br>
+                <a href="/cv.html" class="btn-primary">My Journey So Far</a>
+            </div>
+        </div>
+        <section class="articles-container">
+            <article>
+                <h3>Project 1</h3>
+                <br>
+                <img src="./coming-soon.png" alt="Image saying coming soon">
+            </article>
+            <article>
+                <h3>Project 2</h3>
+                <br>
+                <img src="./coming-soon.png" alt="Image saying coming soon">
+            </article>
+            <article>
+                <h3>Project 3</h3>
+                <br>
+                <img src="./coming-soon.png" alt="Image saying coming soon">
+            </article>
+        </section>
+        <footer>
 
-    <h2>Connect with Me</h2>
-      <a href="https://github.com/Yasmine-azzaoui" title="@shecodesaus on Instagram">
-          <img class="socials-icon" src="./github.png"
-              alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
-      </a>
-      <a
-          href="https://www.linkedin.com/in/yasmine-azzaoui-8b0a8116b/">
-          <img class="socials-icon" src="./linkedin.png" alt="The LinkedIn logoa: A black in" />
-      </a>
-      <a href="mailto:yasmineazzaoui2@gmail.com">
-          <img class="socials-icon" src="./envelope.png"
-              alt="An envelop - linking to my email" />
-      </a>
-  </footer>
-  </body>
+            <h2>Connect with Me</h2>
+            <a href="https://github.com/Yasmine-azzaoui" title="@shecodesaus on Instagram">
+                <img class="socials-icon" src="./github.png"
+                    alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
+            </a>
+            <a href="https://www.linkedin.com/in/yasmine-azzaoui-8b0a8116b/">
+                <img class="socials-icon" src="./linkedin.png" alt="The LinkedIn logoa: A black in" />
+            </a>
+            <a href="mailto:yasmineazzaoui2@gmail.com">
+                <img class="socials-icon" src="./envelope.png" alt="An envelop - linking to my email" />
+            </a>
+        </footer>
+</body>
 
- </html>
+</html>
 
 
 
 <!-- old code  -->
- <!-- <!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
