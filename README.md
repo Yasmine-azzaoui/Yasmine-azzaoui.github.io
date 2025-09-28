@@ -1,6 +1,6 @@
 #  Yasmine Azzaoui - Portfolio Task
 ​
-[My portfolio site](link_to_your_site)
+[My portfolio site](https://yasmine-azzaoui.github.io/)
 ​
 ## Project Requirements
 
@@ -33,6 +33,17 @@
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
 > 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
+#### DESKTOP ####
+####  Image of my homepage
+![Homepage on Desktop](./yasmine-azzaoui.github.io_.png)
+####  Image of my Project page
+![Project page on Desktop](./yasmine-azzaoui.github.io_Projects.html.png)
+####  Image of my Resume page
+![Resume page on Desktop](./yasmine-azzaoui.github.io_cv.html.png)
+#### MOBILE #####
+![Homepage on Mobile](./yasmine-azzaoui.github.io_index.html.png)
+####  Image of my Project page
+![Project page on Mobile](./yasmine-azzaoui.github.io_Projects.html%20(1).png)
+####  Image of my Resume page
+![Resume page on Mobile](./yasmine-azzaoui.github.io_cv.html%20(1).png)
 
-####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)
