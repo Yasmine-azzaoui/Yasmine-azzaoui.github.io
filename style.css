@@ -147,6 +147,13 @@
 
 /* RESUME */
 
+
+.cv-header {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--brand);
+  color: var(--white);
+}
 .cv-download {
   padding: 16px;
   text-align: center;
@@ -375,7 +382,10 @@ header button {
     .articles-container {
       display: flex;
       text-justify: center;
-      justify-content: space-around;
+      /* justify-content: space-around; */
+      max-width: 1200px;      
+    margin: 0 auto;        
+    padding: 0 1rem; 
     }
 
   }
